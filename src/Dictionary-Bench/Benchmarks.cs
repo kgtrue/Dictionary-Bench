@@ -11,6 +11,7 @@ namespace Dictionary_Bench
 
     [MemoryDiagnoser]
     [RankColumn]
+    [RPlotExporter]
     public class Benchmarks
     {
         public List<IntEntity> Ints { get; set; }
@@ -49,7 +50,6 @@ namespace Dictionary_Bench
             }
             return dic.Count;
         }
-
 
         [Benchmark]
         public int WithIntEntityToDictionaryGrowingForLoop()
